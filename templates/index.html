@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hệ thống thông tin tra cứu tên miền</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-placeholder">
+              <img
+                src="https://media1.tenor.com/m/j1bxqoymHhcAAAAC/isthisragebait-ahh-cat.gif"
+                alt="Logo"
+                width="100"
+                height="100"
+                class="logo-image"
+              />
+            </div>
+            <div class="ministry-names">
+              <h1>Nhóm 8</h1>
+              <p>HỆ THỐNG THÔNG TIN TRA CỨU TÊN MIỀN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2 class="main-title">HỆ THỐNG THÔNG TIN TRA CỨU TÊN MIỀN</h2>
+
+        <div class="search-section">
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Nhập tên miền cần tra cứu..."
+              class="search-input"
+            />
+            <button class="search-button">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 19L13.5 13.5M15.5 8.5C15.5 12.366 12.366 15.5 8.5 15.5C4.63401 15.5 1.5 12.366 1.5 8.5C1.5 4.63401 4.63401 1.5 8.5 1.5C12.366 1.5 15.5 4.63401 15.5 8.5Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Tìm kiếm
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-cards">
+      <div class="container">
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="25"
+                  cy="25"
+                  r="24"
+                  stroke="#0052A5"
+                  stroke-width="2"
+                />
+                <path
+                  d="M25 15V35M15 25H35"
+                  stroke="#0052A5"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h4>Nguồn dữ liệu tin cậy</h4>
+            <p>
+              Cho phép người sử dụng tra cứu thông tin tin cậy về tên miền, chủ
+              thể đăng ký sử dụng tên miền trên cơ sở dữ liệu tên miền đăng ký,
+              sử dụng tại Việt Nam do Trung tâm Internet Việt Nam - Bộ Khoa học
+              và Công nghệ quản lý.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="10"
+                  y="10"
+                  width="30"
+                  height="30"
+                  rx="4"
+                  stroke="#0052A5"
+                  stroke-width="2"
+                />
+                <path
+                  d="M18 25H32M18 18H32M18 32H26"
+                  stroke="#0052A5"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h4>Loại tên miền</h4>
+            <p>
+              Tên miền quốc gia Việt Nam ".vn"/Tên miền quốc tế đăng ký tại Việt
+              Nam/Tên miền quốc tế không đăng ký sử dụng tại Nhà đăng ký tên
+              miền tại Việt Nam.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="25"
+                  cy="20"
+                  r="8"
+                  stroke="#0052A5"
+                  stroke-width="2"
+                />
+                <path
+                  d="M10 40C10 32 16 28 25 28C34 28 40 32 40 40"
+                  stroke="#0052A5"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h4>Chủ thể đăng ký sử dụng tên miền</h4>
+            <p>Cung cấp các thông tin về chủ thể đăng ký sử dụng tên miền.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="12"
+                  y="15"
+                  width="26"
+                  height="20"
+                  rx="2"
+                  stroke="#0052A5"
+                  stroke-width="2"
+                />
+                <path
+                  d="M20 15V12C20 10.8954 20.8954 10 22 10H28C29.1046 10 30 10.8954 30 12V15"
+                  stroke="#0052A5"
+                  stroke-width="2"
+                />
+                <circle cx="25" cy="25" r="3" fill="#0052A5" />
+              </svg>
+            </div>
+            <h4>Nhà đăng ký quản lý tên miền</h4>
+            <p>Thông tin về Nhà đăng ký quản lý tên miền.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <h4>Hệ thống tra cứu thông tin tên miền</h4>
+          <p>Phát triển bởi Nhóm 8 K21H</p>
+
+          <div class="contact-info">
+            <div class="contact-item"><strong>Địa chỉ:</strong> Ictu</div>
+            <div class="contact-item">
+              <strong>Điện thoại:</strong> 0123456789
+            </div>
+            <div class="contact-item">
+              <strong>Email:</strong> domain-support@ictu.edu.vn
+            </div>
+          </div>
+
+          <div class="copyright">Bản quyền laivu.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
